@@ -8,6 +8,11 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap';
+import { InitCarouselJs } from '../components/carousel';
+
+document.addEventListener('turbolinks:load', () => {
+  InitCarouselJs();
+})
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

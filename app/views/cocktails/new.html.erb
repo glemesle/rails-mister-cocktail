@@ -5,9 +5,11 @@
 
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
-        <%= f.submit class: 'btn btn-primary' %><%= link_to "Cancel", new_doses_path(@cocktail), class: 'btn btn-primary ml-3' %>
+        <%= f.submit class: 'btn btn-primary' %><%= link_to "Cancel", cocktails_path, class: 'btn btn-primary ml-3' %>
 
       <% end %>
     </div>
   </div>
 </div>
+
+

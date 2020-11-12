@@ -10,3 +10,8 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+#navbarSupportedContent > ul > li:nth-child(2) > a {
+  color: white;
+  background-color: #F16268;
+}
