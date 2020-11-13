@@ -3,8 +3,9 @@
         <div class="carousel-inner row w-10 mxauto" role="listbox">
             <div class="carousel-item col-md-4 active" >
                 <%= @cocktails.first.name %>
-                <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400>
-                <%= link_to "See details", cocktail_path(@cocktails.first), class: "btn btn-info btn-sm m-1 " %>
+                <%= cl_image_tag("npnffxgponhf63frlaok",width: 330, height: 220, crop: :fill) %>
+<!--                 <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400>
+ -->                <%= link_to "See details", cocktail_path(@cocktails.first), class: "btn btn-info btn-sm m-1 " %>
             </div>
             <% @cocktails.each do |cocktail| %>
             <div class="carousel-item col-md-4" >
