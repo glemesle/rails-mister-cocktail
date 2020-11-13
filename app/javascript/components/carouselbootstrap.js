@@ -1,5 +1,5 @@
 const InitCarouselJs = () => {
-  $('#recipeCarousel').carousel({
+$('#recipeCarousel').carousel({
     interval: 10000
   })
 
@@ -20,7 +20,6 @@ const InitCarouselJs = () => {
           next.children(':first-child').clone().appendTo($(this));
         }
   });
-}
+};
 
 export { InitCarouselJs };
-

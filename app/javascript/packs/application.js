@@ -9,9 +9,15 @@ require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap';
 import { InitCarouselJs } from '../components/carousel';
+import { InitCarouselBootstrapJs } from '../components/carouselbootstrap';
+
 
 document.addEventListener('turbolinks:load', () => {
   InitCarouselJs();
+})
+
+document.addEventListener('turbolinks:load', () => {
+  InitCarouselBootstrapJs();
 })
 
 
